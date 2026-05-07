@@ -1,0 +1,56 @@
+name: kawakawa
+description: Kanagawa Lotus-inspired light skin with muted ink, bamboo, and sakura accents
+
+colors:
+  banner_border: "#545464"
+  banner_title: "#1f1f28"
+  banner_accent: "#4d699b"
+  banner_dim: "#716e61"
+  banner_text: "#1f1f28"
+  ui_accent: "#4d699b"
+  ui_label: "#624c83"
+  ui_ok: "#6f894e"
+  ui_error: "#c84053"
+  ui_warn: "#77713f"
+  prompt: "#1f1f28"
+  input_rule: "#545464"
+  response_border: "#4d699b"
+  session_label: "#4d699b"
+  session_border: "#716e61"
+  status_bar_bg: "#e7dba0"
+  status_bar_text: "#1f1f28"
+  status_bar_strong: "#4d699b"
+  status_bar_dim: "#716e61"
+  status_bar_good: "#6f894e"
+  status_bar_warn: "#77713f"
+  status_bar_bad: "#cc6d00"
+  status_bar_critical: "#c84053"
+  voice_status_bg: "#e7dba0"
+  selection_bg: "#c7d7e0"
+  completion_menu_bg: "#dcd5ac"
+  completion_menu_current_bg: "#c7d7e0"
+  completion_menu_meta_bg: "#e7dba0"
+  completion_menu_meta_current_bg: "#e5ddb0"
+
+spinner:
+  waiting_faces: ["(λ)", "(μ)", "(ν)", "(∴)"]
+  thinking_faces: ["(λ)", "(∫)", "(∴)", "(∵)"]
+  thinking_verbs:
+    - reading
+    - checking palette
+    - composing
+    - reasoning
+    - applying colors
+  wings:
+    - ["⟪", "⟫"]
+    - ["‹", "›"]
+
+branding:
+  agent_name: "Hermes Agent"
+  welcome: "Welcome to Hermes Agent! Type your message or /help for commands."
+  goodbye: "Goodbye! ⚕"
+  response_label: " ⚕ Hermes "
+  prompt_symbol: "❯"
+  help_header: "[?] Available Commands"
+
+tool_prefix: "│"

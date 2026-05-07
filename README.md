@@ -1,17 +1,23 @@
 # noomz-themes
 
-High-contrast light Modus Operandi themes for agent CLIs.
+High-contrast light themes for agent CLIs.
 
-Currently included:
+Currently included for Claude Code, pi.dev, and Hermes Agent:
 
-- Claude Code: `themes/claude/modus-operandi.json`
-- Claude Code tinted variant: `themes/claude/modus-operandi-tinted.json` (uses canonical `modus-operandi-tinted` palette values from https://protesilaos.com/emacs/modus-themes-colors)
-- pi.dev: `themes/pi.dev/modus-operandi.json`
-- pi.dev tinted variant: `themes/pi.dev/modus-operandi-tinted.json`
-- Hermes Agent: `themes/hermes/modus-operandi.yaml`
-- Hermes Agent tinted variant: `themes/hermes/modus-operandi-tinted.yaml`
+- `modus-operandi`
+- `modus-operandi-tinted` (uses canonical `modus-operandi-tinted` palette values from https://protesilaos.com/emacs/modus-themes-colors)
+- `kawakawa` (Kanagawa Lotus-inspired light adaptation)
+- `tokyo-night-day` (TokyoNight Day-inspired adaptation)
+- `everforest-light` (Everforest Light Medium-inspired adaptation)
 
-The palette keeps the light Modus Operandi feel while darkening low-contrast text, especially collapsed-output hints, file/link paths, dim metadata, neutral borders, and selection surfaces.
+The palettes keep light-theme readability while darkening low-contrast text, especially collapsed-output hints, file/link paths, dim metadata, neutral borders, and selection surfaces.
+
+Palette sources:
+
+- Modus: https://protesilaos.com/emacs/modus-themes-colors
+- Kanagawa/Kawakawa adaptation: https://github.com/rebelot/kanagawa.nvim
+- Tokyo Night Day: https://github.com/folke/tokyonight.nvim
+- Everforest Light Medium: https://github.com/sainnhe/everforest/blob/master/palette.md
 
 ## Install
 
@@ -27,6 +33,9 @@ Then select one inside Claude Code:
 ```text
 /theme modus-operandi
 /theme modus-operandi-tinted
+/theme kawakawa
+/theme tokyo-night-day
+/theme everforest-light
 ```
 
 ### pi.dev
@@ -38,7 +47,7 @@ mkdir -p ~/.pi/agent/themes
 cp themes/pi.dev/*.json ~/.pi/agent/themes/
 ```
 
-Then set `theme` to `modus-operandi` or `modus-operandi-tinted` in `~/.pi/agent/settings.json`.
+Then set `theme` to one theme slug in `~/.pi/agent/settings.json`, for example `modus-operandi`, `kawakawa`, `tokyo-night-day`, or `everforest-light`.
 
 ### Hermes Agent
 
@@ -52,6 +61,9 @@ Then select one inside Hermes:
 ```text
 /skin modus-operandi
 /skin modus-operandi-tinted
+/skin kawakawa
+/skin tokyo-night-day
+/skin everforest-light
 ```
 
 To make it the default, set:
@@ -128,12 +140,9 @@ Claude Code does not control the terminal application's canvas/background. If th
 
 ```text
 themes/
-  claude/modus-operandi.json
-  claude/modus-operandi-tinted.json
-  pi.dev/modus-operandi.json
-  pi.dev/modus-operandi-tinted.json
-  hermes/modus-operandi.yaml
-  hermes/modus-operandi-tinted.yaml
+  claude/*.json
+  pi.dev/*.json
+  hermes/*.yaml
 scripts/
   install.sh
   validate-claude-theme.py
