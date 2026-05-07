@@ -3,6 +3,8 @@ set -eu
 
 ROOT="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 CLAUDE_THEMES_DIR="$ROOT/themes/claude"
+PI_THEMES_DIR="$ROOT/themes/pi.dev"
+HERMES_SKINS_DIR="$ROOT/themes/hermes"
 VALIDATOR="$ROOT/scripts/validate-claude-theme.py"
 
 if [ "${STRICT:-0}" = "1" ]; then
@@ -17,11 +19,16 @@ for theme in "$CLAUDE_THEMES_DIR"/*.json; do
 done
 
 mkdir -p "$HOME/.pi/agent/themes"
-cp "$ROOT/themes/pi.dev/modus-operandi.json" "$HOME/.pi/agent/themes/modus-operandi.json"
+for theme in "$PI_THEMES_DIR"/*.json; do
+  cp "$theme" "$HOME/.pi/agent/themes/$(basename "$theme")"
+done
 
 mkdir -p "$HOME/.hermes/skins"
-cp "$ROOT/themes/hermes/modus-operandi.yaml" "$HOME/.hermes/skins/modus-operandi.yaml"
+for skin in "$HERMES_SKINS_DIR"/*.yaml; do
+  cp "$skin" "$HOME/.hermes/skins/$(basename "$skin")"
+done
 
 printf '%s\n' "Installed Modus Operandi themes for Claude Code, pi.dev, and Hermes Agent."
 printf '%s\n' "Claude variants: modus-operandi, modus-operandi-tinted. Activate with /theme <variant>."
-printf '%s\n' "Activate manually where needed: Hermes /skin modus-operandi, pi.dev settings theme=modus-operandi."
+printf '%s\n' "Hermes variants: modus-operandi, modus-operandi-tinted. Activate with /skin <variant>."
+printf '%s\n' "pi.dev variants: set theme to modus-operandi or modus-operandi-tinted in ~/.pi/agent/settings.json."

@@ -7,7 +7,9 @@ Currently included:
 - Claude Code: `themes/claude/modus-operandi.json`
 - Claude Code tinted variant: `themes/claude/modus-operandi-tinted.json` (uses canonical `modus-operandi-tinted` palette values from https://protesilaos.com/emacs/modus-themes-colors)
 - pi.dev: `themes/pi.dev/modus-operandi.json`
+- pi.dev tinted variant: `themes/pi.dev/modus-operandi-tinted.json`
 - Hermes Agent: `themes/hermes/modus-operandi.yaml`
+- Hermes Agent tinted variant: `themes/hermes/modus-operandi-tinted.yaml`
 
 The palette keeps the light Modus Operandi feel while darkening low-contrast text, especially collapsed-output hints, file/link paths, dim metadata, neutral borders, and selection surfaces.
 
@@ -33,22 +35,23 @@ Preferred custom theme location:
 
 ```sh
 mkdir -p ~/.pi/agent/themes
-cp themes/pi.dev/modus-operandi.json ~/.pi/agent/themes/modus-operandi.json
+cp themes/pi.dev/*.json ~/.pi/agent/themes/
 ```
 
-Then set `theme` to `modus-operandi` in `~/.pi/agent/settings.json`.
+Then set `theme` to `modus-operandi` or `modus-operandi-tinted` in `~/.pi/agent/settings.json`.
 
 ### Hermes Agent
 
 ```sh
 mkdir -p ~/.hermes/skins
-cp themes/hermes/modus-operandi.yaml ~/.hermes/skins/modus-operandi.yaml
+cp themes/hermes/*.yaml ~/.hermes/skins/
 ```
 
-Then select it inside Hermes:
+Then select one inside Hermes:
 
 ```text
 /skin modus-operandi
+/skin modus-operandi-tinted
 ```
 
 To make it the default, set:
@@ -128,7 +131,9 @@ themes/
   claude/modus-operandi.json
   claude/modus-operandi-tinted.json
   pi.dev/modus-operandi.json
+  pi.dev/modus-operandi-tinted.json
   hermes/modus-operandi.yaml
+  hermes/modus-operandi-tinted.yaml
 scripts/
   install.sh
   validate-claude-theme.py

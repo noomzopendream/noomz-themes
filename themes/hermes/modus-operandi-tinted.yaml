@@ -1,0 +1,56 @@
+name: modus-operandi-tinted
+description: High-contrast light Modus Operandi Tinted skin using canonical Modus palette values
+
+colors:
+  banner_border: "#9f9690"
+  banner_title: "#000000"
+  banner_accent: "#0031a9"
+  banner_dim: "#595959"
+  banner_text: "#000000"
+  ui_accent: "#0031a9"
+  ui_label: "#721045"
+  ui_ok: "#006300"
+  ui_error: "#a60000"
+  ui_warn: "#6d5000"
+  prompt: "#000000"
+  input_rule: "#721045"
+  response_border: "#0031a9"
+  session_label: "#00598b"
+  session_border: "#9f9690"
+  status_bar_bg: "#efe9dd"
+  status_bar_text: "#000000"
+  status_bar_strong: "#0031a9"
+  status_bar_dim: "#595959"
+  status_bar_good: "#006300"
+  status_bar_warn: "#6d5000"
+  status_bar_bad: "#8a290f"
+  status_bar_critical: "#a60000"
+  voice_status_bg: "#efe9dd"
+  selection_bg: "#c2bcb5"
+  completion_menu_bg: "#fbf7f0"
+  completion_menu_current_bg: "#ecedff"
+  completion_menu_meta_bg: "#efe9dd"
+  completion_menu_meta_current_bg: "#e0f2fa"
+
+spinner:
+  waiting_faces: ["(λ)", "(μ)", "(ν)", "(∴)"]
+  thinking_faces: ["(λ)", "(∫)", "(∴)", "(∵)"]
+  thinking_verbs:
+    - reading
+    - tinting
+    - composing
+    - reasoning
+    - applying changes
+  wings:
+    - ["⟪", "⟫"]
+    - ["‹", "›"]
+
+branding:
+  agent_name: "Hermes Agent"
+  welcome: "Welcome to Hermes Agent! Type your message or /help for commands."
+  goodbye: "Goodbye! ⚕"
+  response_label: " ⚕ Hermes "
+  prompt_symbol: "❯"
+  help_header: "[?] Available Commands"
+
+tool_prefix: "│"
