@@ -5,7 +5,7 @@ High-contrast light Modus Operandi themes for agent CLIs.
 Currently included:
 
 - Claude Code: `themes/claude/modus-operandi.json`
-- Claude Code tinted variant: `themes/claude/modus-operandi-tinted.json`
+- Claude Code tinted variant: `themes/claude/modus-operandi-tinted.json` (uses canonical `modus-operandi-tinted` palette values from https://protesilaos.com/emacs/modus-themes-colors)
 - pi.dev: `themes/pi.dev/modus-operandi.json`
 - Hermes Agent: `themes/hermes/modus-operandi.yaml`
 
