@@ -29,6 +29,6 @@ for skin in "$HERMES_SKINS_DIR"/*.yaml; do
 done
 
 printf '%s\n' "Installed noomz themes for Claude Code, pi.dev, and Hermes Agent."
-printf '%s\n' "Claude variants: modus-operandi, modus-operandi-tinted, kawakawa, tokyo-night-day, everforest-light. Activate with /theme <variant>."
-printf '%s\n' "Hermes variants: modus-operandi, modus-operandi-tinted, kawakawa, tokyo-night-day, everforest-light. Activate with /skin <variant>."
-printf '%s\n' "pi.dev variants: set theme to modus-operandi, modus-operandi-tinted, kawakawa, tokyo-night-day, or everforest-light in ~/.pi/agent/settings.json."
+printf '%s\n' "Claude variants: modus-operandi, modus-operandi-tinted, kanagawa, tokyo-night-day, everforest-light. Activate with /theme <variant>."
+printf '%s\n' "Hermes variants: modus-operandi, modus-operandi-tinted, kanagawa, tokyo-night-day, everforest-light. Activate with /skin <variant>."
+printf '%s\n' "pi.dev variants: set theme to modus-operandi, modus-operandi-tinted, kanagawa, tokyo-night-day, or everforest-light in ~/.pi/agent/settings.json."

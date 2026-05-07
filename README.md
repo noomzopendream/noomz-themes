@@ -6,7 +6,7 @@ Currently included for Claude Code, pi.dev, and Hermes Agent:
 
 - `modus-operandi`
 - `modus-operandi-tinted` (uses canonical `modus-operandi-tinted` palette values from https://protesilaos.com/emacs/modus-themes-colors)
-- `kawakawa` (Kanagawa Lotus-inspired light adaptation)
+- `kanagawa` (Kanagawa Lotus-inspired light adaptation)
 - `tokyo-night-day` (TokyoNight Day-inspired adaptation)
 - `everforest-light` (Everforest Light Medium-inspired adaptation)
 
@@ -33,7 +33,7 @@ Then select one inside Claude Code:
 ```text
 /theme modus-operandi
 /theme modus-operandi-tinted
-/theme kawakawa
+/theme kanagawa
 /theme tokyo-night-day
 /theme everforest-light
 ```
@@ -47,7 +47,7 @@ mkdir -p ~/.pi/agent/themes
 cp themes/pi.dev/*.json ~/.pi/agent/themes/
 ```
 
-Then set `theme` to one theme slug in `~/.pi/agent/settings.json`, for example `modus-operandi`, `kawakawa`, `tokyo-night-day`, or `everforest-light`.
+Then set `theme` to one theme slug in `~/.pi/agent/settings.json`, for example `modus-operandi`, `kanagawa`, `tokyo-night-day`, or `everforest-light`.
 
 ### Hermes Agent
 
@@ -61,7 +61,7 @@ Then select one inside Hermes:
 ```text
 /skin modus-operandi
 /skin modus-operandi-tinted
-/skin kawakawa
+/skin kanagawa
 /skin tokyo-night-day
 /skin everforest-light
 ```
