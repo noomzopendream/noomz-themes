@@ -5,6 +5,7 @@ High-contrast light Modus Operandi themes for agent CLIs.
 Currently included:
 
 - Claude Code: `themes/claude/modus-operandi.json`
+- Claude Code tinted variant: `themes/claude/modus-operandi-tinted.json`
 - pi.dev: `themes/pi.dev/modus-operandi.json`
 - Hermes Agent: `themes/hermes/modus-operandi.yaml`
 
@@ -16,13 +17,14 @@ The palette keeps the light Modus Operandi feel while darkening low-contrast tex
 
 ```sh
 mkdir -p ~/.claude/themes
-cp themes/claude/modus-operandi.json ~/.claude/themes/modus-operandi.json
+cp themes/claude/*.json ~/.claude/themes/
 ```
 
-Then select it inside Claude Code:
+Then select one inside Claude Code:
 
 ```text
 /theme modus-operandi
+/theme modus-operandi-tinted
 ```
 
 ### pi.dev
@@ -59,32 +61,32 @@ hermes config set display.skin modus-operandi
 
 Claude Code custom themes use the documented `name`, `base`, and `overrides` contract. Unknown override tokens are silently ignored by Claude Code, so this repo includes a validator to catch schema mistakes, invalid color syntax, and accidental undocumented tokens.
 
-Validate the repo theme:
+Validate the repo themes:
 
 ```sh
-python3 scripts/validate-claude-theme.py themes/claude/modus-operandi.json
+python3 scripts/validate-claude-theme.py themes/claude/*.json
 ```
 
-Validate the active installed Claude Code copy:
+Validate the active installed Claude Code copies:
 
 ```sh
-python3 scripts/validate-claude-theme.py ~/.claude/themes/modus-operandi.json
+python3 scripts/validate-claude-theme.py ~/.claude/themes/modus-operandi*.json
 ```
 
 Validate all known active copies, including CCS-managed instances:
 
 ```sh
 python3 scripts/validate-claude-theme.py \
-  ~/.claude/themes/modus-operandi.json \
-  ~/.ccs/instances/work/themes/modus-operandi.json \
-  ~/.ccs/instances/personal/themes/modus-operandi.json \
-  themes/claude/modus-operandi.json
+  ~/.claude/themes/modus-operandi*.json \
+  ~/.ccs/instances/work/themes/modus-operandi*.json \
+  ~/.ccs/instances/personal/themes/modus-operandi*.json \
+  themes/claude/*.json
 ```
 
 For CI-like checks, fail on undocumented tokens too:
 
 ```sh
-python3 scripts/validate-claude-theme.py --strict-tokens themes/claude/modus-operandi.json
+python3 scripts/validate-claude-theme.py --strict-tokens themes/claude/*.json
 ```
 
 The active Claude Code preference should select the custom theme slug:
@@ -124,6 +126,7 @@ Claude Code does not control the terminal application's canvas/background. If th
 ```text
 themes/
   claude/modus-operandi.json
+  claude/modus-operandi-tinted.json
   pi.dev/modus-operandi.json
   hermes/modus-operandi.yaml
 scripts/
