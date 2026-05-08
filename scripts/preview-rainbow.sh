@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+# preview-rainbow.sh — print rainbow palette swatches for claude themes
+# usage: ./preview-rainbow.sh [theme-name]
+#   theme-name: operandi | tinted (default: both)
+
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+show_theme() {
+  local file="$1" label="$2"
+  local filepath="themes/claude/${file}"
+
+  [ ! -f "$filepath" ] && { echo "SKIP: $filepath" >&2; return; }
+
+  python3 -c "
+import json
+with open('$filepath') as f:
+    d = json.load(f).get('overrides', {})
+
+tokens = {k:v for k,v in d.items() if k.startswith('rainbow_')}
+
+print()
+print('  $label')
+print('  ' + '-' * 52)
+
+sample = 'Hello rainbow'
+
+# spectrum order: red -> violet
+spectrum = ['rainbow_red','rainbow_orange','rainbow_yellow','rainbow_green','rainbow_blue','rainbow_indigo','rainbow_violet']
+
+def parse_color(v):
+    if v.startswith('rgb('):
+        vals = [int(x) for x in v.replace('rgb(','').replace(')','').split(',')]
+        return tuple(vals), v
+    else:
+        r = int(v[1:3],16); g = int(v[3:5],16); b = int(v[5:7],16)
+        return (r,g,b), v
+
+# display order: bases in spectrum, then shimmers in same order
+order = []
+for b in spectrum:
+    order.append(b)
+    shimmer = b + '_shimmer'
+    if shimmer in tokens:
+        order.append(shimmer)
+
+for k in order:
+    v = tokens[k]
+    (r,g,b), display = parse_color(v)
+    block = f'\033[48;2;{r};{g};{b}m  \033[0m'
+    fg    = f'\033[38;2;{r};{g};{b}m'
+    print(f'  {block}  {k:34s}  {display}  |  {fg}{sample}\033[0m')
+
+# rainbow cycling line: each char colored by next base color
+cycle_colors = []
+for b in spectrum:
+    v = tokens[b]
+    (r,g,b), _ = parse_color(v)
+    cycle_colors.append((r,g,b))
+
+# Build rainbow text: palette blocks + sample
+parts = []
+for (r,g,b) in cycle_colors:
+    parts.append(f'\033[48;2;{r};{g};{b}m  \033[0m')
+blocks = ''.join(parts)
+
+rainbow_text = 'noomz-themes'
+colored = []
+for i, ch in enumerate(rainbow_text):
+    (r,g,b) = cycle_colors[i % len(cycle_colors)]
+    colored.append(f'\033[38;2;{r};{g};{b}m{ch}\033[0m')
+result = ''.join(colored)
+label = 'rainbow'
+print(f'  {blocks}  {label:>34s}           {result}')
+print()
+"
+}
+
+[ $# -eq 0 ] || [ "$1" = "operandi" ] && show_theme "modus-operandi.json" "MODUS OPERANDI"
+[ $# -eq 0 ] || [ "$1" = "tinted" ] && show_theme "modus-operandi-tinted.json" "MODUS OPERANDI TINTED"
