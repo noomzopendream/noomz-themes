@@ -1,0 +1,12 @@
+{
+  "pathAccess": {
+    "allowedPaths": [
+      "/dev/",
+      "~/.agents/skills/verify-before-complete/",
+      "/tmp/",
+      "~/.claude/",
+      "~/.pi/agent/",
+      "~/.hermes/"
+    ]
+  }
+}
