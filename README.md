@@ -142,7 +142,19 @@ Useful token probes:
 - plan mode: `planMode`
 - fullscreen message panels: `userMessageBackground`, `bashMessageBackgroundColor`, `messageActionsBackground`
 
-Claude Code does not control the terminal application's canvas/background. If the whole terminal background is too bright, adjust the terminal emulator profile instead, or use an ANSI-based Claude theme base such as `light-ansi` together with the terminal ANSI palette and background color. If using cmux or another terminal wrapper, identify the host terminal profile before changing colors; do not kill production cmux processes just to force a reload.
+Claude Code does not control the terminal application's canvas/background. These theme files can change message blocks, text colors, borders, selections, and related Claude UI tokens, but the full terminal page background comes from the terminal emulator profile (or from Claude internals not exposed as documented theme tokens). If the whole terminal background is too bright, adjust the terminal emulator profile instead, or use an ANSI-based Claude theme base such as `light-ansi` together with the terminal ANSI palette and background color.
+
+Recommended terminal profile background colors:
+
+| Theme | Terminal background |
+| --- | --- |
+| `modus-operandi` | `#fcf7ed` |
+| `modus-operandi-tinted` | `#fbf7f0` |
+| `kanagawa` | `#f2ecbc` |
+| `tokyo-night-day` | `#e1e2e7` |
+| `everforest-light` | `#fdf6e3` |
+
+If using cmux or another terminal wrapper, identify the host terminal profile before changing colors; do not kill production cmux processes just to force a reload.
 
 ## Files
 
