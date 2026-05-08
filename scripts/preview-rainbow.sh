@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # preview-rainbow.sh — print rainbow palette swatches for claude themes
 # usage: ./preview-rainbow.sh [theme-name]
-#   theme-name: operandi | tinted (default: both)
+#   theme-name: operandi | tinted | everforest | kanagawa | tokyo (default: all)
 
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -76,5 +76,40 @@ print()
 "
 }
 
-[ $# -eq 0 ] || [ "$1" = "operandi" ] && show_theme "modus-operandi.json" "MODUS OPERANDI"
-[ $# -eq 0 ] || [ "$1" = "tinted" ] && show_theme "modus-operandi-tinted.json" "MODUS OPERANDI TINTED"
+# theme registry: alias -> (filename, label)
+# ordered list to preserve iteration order
+THEME_SPECS=(
+  "operandi|modus-operandi.json|MODUS OPERANDI"
+  "tinted|modus-operandi-tinted.json|MODUS OPERANDI TINTED"
+  "everforest|everforest-light.json|EVERFOREST LIGHT"
+  "kanagawa|kanagawa.json|KANAGAWA"
+  "tokyo|tokyo-night-day.json|TOKYO NIGHT DAY"
+)
+
+show_all() {
+  for spec in "${THEME_SPECS[@]}"; do
+    IFS='|' read -r _ file label <<< "$spec"
+    show_theme "$file" "$label"
+  done
+}
+
+show_one() {
+  local alias="$1"
+  for spec in "${THEME_SPECS[@]}"; do
+    IFS='|' read -r a file label <<< "$spec"
+    if [ "$a" = "$alias" ]; then
+      show_theme "$file" "$label"
+      return 0
+    fi
+  done
+  echo "Unknown theme: $alias" >&2
+  echo -n "Available: " >&2
+  for spec in "${THEME_SPECS[@]}"; do
+    IFS='|' read -r a _ _ <<< "$spec"
+    echo -n "$a " >&2
+  done
+  echo >&2
+  exit 1
+}
+
+if [ $# -eq 0 ]; then show_all; else show_one "$1"; fi
