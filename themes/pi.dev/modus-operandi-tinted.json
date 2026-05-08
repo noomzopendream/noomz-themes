@@ -6,8 +6,8 @@
     "fg": "#000000",
     "surface": "#efe9dd",
     "surface2": "#dfd5cf",
-    "surface3": "#f8e6f5",
-    "selection": "#c2bcb5",
+    "surface3": "#f4dcef",
+    "selection": "#b6b0a8",
     "borderGray": "#9f9690",
     "mutedGray": "#595959",
     "dimGray": "#595959",
@@ -25,9 +25,9 @@
     "orange2": "#894000",
     "bgAdded": "#dcf8d1",
     "bgRemoved": "#ffe9e5",
-    "bgInfo": "#ecedff",
-    "bgCyan": "#e0f2fa",
-    "bgYellow": "#f8f0d0"
+    "bgInfo": "#f0c6ee",
+    "bgCyan": "#d2ecf4",
+    "bgYellow": "#f4e8c0"
   },
   "colors": {
     "accent": "blue",
@@ -85,6 +85,6 @@
   "export": {
     "pageBg": "#fbf7f0",
     "cardBg": "#efe9dd",
-    "infoBg": "#ecedff"
+    "infoBg": "#f0c6ee"
   }
 }

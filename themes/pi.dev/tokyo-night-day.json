@@ -4,10 +4,10 @@
   "vars": {
     "bg": "#e1e2e7",
     "fg": "#1f2335",
-    "surface": "#d0d5e3",
-    "surface2": "#c4c8da",
-    "surface3": "#d5d9e4",
-    "selection": "#b7c1e3",
+    "surface": "#c8c8e4",
+    "surface2": "#b8bce0",
+    "surface3": "#bcd0e4",
+    "selection": "#a8b8e0",
     "borderGray": "#68709a",
     "mutedGray": "#565f89",
     "dimGray": "#68709a",
@@ -20,7 +20,8 @@
     "red": "#c64343",
     "yellow": "#8c6c3e",
     "orange": "#b15c00",
-    "orange2": "#a27629"
+    "orange2": "#a27629",
+    "bgYellow": "#dcd0bc"
   },
   "colors": {
     "accent": "blue",
@@ -77,7 +78,7 @@
   },
   "export": {
     "pageBg": "#e1e2e7",
-    "cardBg": "#d8dbe6",
-    "infoBg": "#d0d5e3"
+    "cardBg": "#c8c8e4",
+    "infoBg": "#bcd0e4"
   }
 }

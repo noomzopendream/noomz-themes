@@ -21,6 +21,14 @@ Palette sources:
 
 ## Install
 
+Run the installer to copy all supported themes into local agent config directories:
+
+```sh
+bash scripts/install.sh
+```
+
+Claude themes are copied to `~/.claude/themes/` and to every existing CCS profile under `~/.ccs/instances/*/themes/`.
+
 ### Claude Code
 
 ```sh

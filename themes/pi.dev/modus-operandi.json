@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/badlogic/pi-mono/main/packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
   "name": "modus-operandi",
   "vars": {
-    "bg": "#ffffff",
+    "bg": "#fcf7ed",
     "fg": "#000000",
-    "surface": "#ebebeb",
-    "surface2": "#e8e8e8",
-    "surface3": "#eeeeee",
-    "selection": "#bed6ff",
+    "surface": "#d6d0f0",
+    "surface2": "#c4d0f8",
+    "surface3": "#c4dcea",
+    "selection": "#96b8f4",
     "borderGray": "#313131",
     "mutedGray": "#313131",
     "dimGray": "#404040",
@@ -20,7 +20,8 @@
     "red": "#a60000",
     "yellow": "#6f5500",
     "orange": "#7a230a",
-    "orange2": "#822000"
+    "orange2": "#822000",
+    "bgYellow": "#ecdab2"
   },
   "colors": {
     "accent": "blue",
@@ -76,8 +77,8 @@
     "bashMode": "orange"
   },
   "export": {
-    "pageBg": "#ffffff",
-    "cardBg": "#f5f5f5",
-    "infoBg": "#eef3ff"
+    "pageBg": "#fcf7ed",
+    "cardBg": "#d6d0f0",
+    "infoBg": "#c4d0f8"
   }
 }

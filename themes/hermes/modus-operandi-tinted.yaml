@@ -26,11 +26,11 @@ colors:
   status_bar_bad: "#8a290f"
   status_bar_critical: "#a60000"
   voice_status_bg: "#efe9dd"
-  selection_bg: "#c2bcb5"
-  completion_menu_bg: "#fbf7f0"
-  completion_menu_current_bg: "#ecedff"
-  completion_menu_meta_bg: "#efe9dd"
-  completion_menu_meta_current_bg: "#e0f2fa"
+  selection_bg: "#b6b0a8"
+  completion_menu_bg: "#d2ecf4"
+  completion_menu_current_bg: "#f0c6ee"
+  completion_menu_meta_bg: "#f4dcef"
+  completion_menu_meta_current_bg: "#d2ecf4"
 
 spinner:
   waiting_faces: ["(λ)", "(μ)", "(ν)", "(∴)"]

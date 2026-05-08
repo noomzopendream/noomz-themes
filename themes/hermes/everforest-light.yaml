@@ -17,7 +17,7 @@ colors:
   response_border: "#3a94c5"
   session_label: "#3a94c5"
   session_border: "#708089"
-  status_bar_bg: "#efebd4"
+  status_bar_bg: "#e6decf"
   status_bar_text: "#2f383e"
   status_bar_strong: "#3a94c5"
   status_bar_dim: "#708089"
@@ -25,12 +25,12 @@ colors:
   status_bar_warn: "#dfa000"
   status_bar_bad: "#f57d26"
   status_bar_critical: "#f85552"
-  voice_status_bg: "#efebd4"
-  selection_bg: "#eaedc8"
-  completion_menu_bg: "#f4f0d9"
-  completion_menu_current_bg: "#eaedc8"
-  completion_menu_meta_bg: "#efebd4"
-  completion_menu_meta_current_bg: "#e6e2cc"
+  voice_status_bg: "#e6decf"
+  selection_bg: "#d4dba8"
+  completion_menu_bg: "#d8e6cd"
+  completion_menu_current_bg: "#d4dba8"
+  completion_menu_meta_bg: "#e6decf"
+  completion_menu_meta_current_bg: "#dcd0b6"
 
 spinner:
   waiting_faces: ["(λ)", "(μ)", "(ν)", "(∴)"]

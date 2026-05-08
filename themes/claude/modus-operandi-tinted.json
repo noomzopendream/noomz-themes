@@ -52,17 +52,17 @@
     "rainbow_blue_shimmer": "#3546c2",
     "rainbow_indigo_shimmer": "#2f3f83",
     "rainbow_violet_shimmer": "#8f0075",
-    "userMessageBackground": "#f8e6f5",
-    "userMessageBackgroundHover": "#ffddff",
-    "selectionBg": "#c2bcb5",
-    "bashMessageBackgroundColor": "#e0f2fa",
-    "memoryBackgroundColor": "#f8f0d0",
+    "userMessageBackground": "#f4dcef",
+    "userMessageBackgroundHover": "#f0c6ee",
+    "selectionBg": "#b6b0a8",
+    "bashMessageBackgroundColor": "#d2ecf4",
+    "memoryBackgroundColor": "#f4e8c0",
     "rate_limit_fill": "#0031a9",
     "rate_limit_empty": "#9f9690",
     "fastMode": "#8a290f",
     "fastModeShimmer": "#894000",
     "briefLabelYou": "#00598b",
     "briefLabelClaude": "#721045",
-    "messageActionsBackground": "#ecedff"
+    "messageActionsBackground": "#f0c6ee"
   }
 }
