@@ -1,0 +1,56 @@
+name: rose-pine-dawn
+description: Rosé Pine Dawn-inspired light skin
+
+colors:
+  banner_border: "#797593"
+  banner_title: "#575279"
+  banner_accent: "#286983"
+  banner_dim: "#9893a5"
+  banner_text: "#575279"
+  ui_accent: "#286983"
+  ui_label: "#907aa9"
+  ui_ok: "#56949f"
+  ui_error: "#b4637a"
+  ui_warn: "#ea9d34"
+  prompt: "#575279"
+  input_rule: "#797593"
+  response_border: "#286983"
+  session_label: "#286983"
+  session_border: "#797593"
+  status_bar_bg: "#fffaf3"
+  status_bar_text: "#575279"
+  status_bar_strong: "#286983"
+  status_bar_dim: "#9893a5"
+  status_bar_good: "#56949f"
+  status_bar_warn: "#ea9d34"
+  status_bar_bad: "#d7827e"
+  status_bar_critical: "#b4637a"
+  voice_status_bg: "#fffaf3"
+  selection_bg: "#dfdad9"
+  completion_menu_bg: "#f4ede8"
+  completion_menu_current_bg: "#dfdad9"
+  completion_menu_meta_bg: "#fffaf3"
+  completion_menu_meta_current_bg: "#f2e9e1"
+
+spinner:
+  waiting_faces: ["(✿)", "(❀)", "(✾)", "(✽)"]
+  thinking_faces: ["(✿)", "(☾)", "(❀)", "(☽)"]
+  thinking_verbs:
+    - reading
+    - checking palette
+    - composing
+    - reasoning
+    - applying colors
+  wings:
+    - ["⟪", "⟫"]
+    - ["‹", "›"]
+
+branding:
+  agent_name: "Hermes Agent"
+  welcome: "Welcome to Hermes Agent! Type your message or /help for commands."
+  goodbye: "Goodbye! ⚕"
+  response_label: " ⚕ Hermes "
+  prompt_symbol: "❯"
+  help_header: "[?] Available Commands"
+
+tool_prefix: "│"
