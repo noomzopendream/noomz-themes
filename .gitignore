@@ -1,5 +1,7 @@
 .DS_Store
 .omc/
+.pi/
+*.zip
 *.bak
 # MemPalace per-project files (issue #185)
 mempalace.yaml
