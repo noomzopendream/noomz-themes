@@ -1,36 +1,36 @@
-name: rose-pine
-description: Rosé Pine-inspired dark skin
+name: noomz-rose-pine-moon
+description: Rosé Pine Moon-inspired dark skin
 
 colors:
   banner_border: "#6e6a86"
   banner_title: "#e0def4"
-  banner_accent: "#31748f"
+  banner_accent: "#3e8fb0"
   banner_dim: "#6e6a86"
   banner_text: "#e0def4"
-  ui_accent: "#31748f"
+  ui_accent: "#3e8fb0"
   ui_label: "#c4a7e7"
   ui_ok: "#9ccfd8"
   ui_error: "#eb6f92"
   ui_warn: "#f6c177"
   prompt: "#e0def4"
   input_rule: "#6e6a86"
-  response_border: "#31748f"
-  session_label: "#31748f"
+  response_border: "#3e8fb0"
+  session_label: "#3e8fb0"
   session_border: "#6e6a86"
-  status_bar_bg: "#1f1d2e"
+  status_bar_bg: "#2a273f"
   status_bar_text: "#e0def4"
-  status_bar_strong: "#31748f"
+  status_bar_strong: "#3e8fb0"
   status_bar_dim: "#6e6a86"
   status_bar_good: "#9ccfd8"
   status_bar_warn: "#f6c177"
-  status_bar_bad: "#ebbcba"
+  status_bar_bad: "#ea9a97"
   status_bar_critical: "#eb6f92"
-  voice_status_bg: "#1f1d2e"
-  selection_bg: "#403d52"
-  completion_menu_bg: "#21202e"
-  completion_menu_current_bg: "#403d52"
-  completion_menu_meta_bg: "#1f1d2e"
-  completion_menu_meta_current_bg: "#26233a"
+  voice_status_bg: "#2a273f"
+  selection_bg: "#44415a"
+  completion_menu_bg: "#2a283e"
+  completion_menu_current_bg: "#44415a"
+  completion_menu_meta_bg: "#2a273f"
+  completion_menu_meta_current_bg: "#393552"
 
 spinner:
   waiting_faces: ["(✿)", "(❀)", "(✾)", "(✽)"]

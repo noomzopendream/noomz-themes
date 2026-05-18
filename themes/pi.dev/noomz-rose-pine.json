@@ -1,27 +1,27 @@
 {
   "$schema": "https://raw.githubusercontent.com/badlogic/pi-mono/main/packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
-  "name": "rose-pine-dawn",
+  "name": "noomz-rose-pine",
   "vars": {
-    "bg": "#faf4ed",
-    "fg": "#575279",
-    "surface": "#fffaf3",
-    "surface2": "#f2e9e1",
-    "surface3": "#f4ede8",
-    "selection": "#dfdad9",
-    "borderGray": "#797593",
-    "mutedGray": "#797593",
-    "dimGray": "#9893a5",
-    "faintGray": "#797593",
-    "blue": "#286983",
-    "blue2": "#56949f",
-    "cyan": "#56949f",
-    "purple": "#907aa9",
-    "green": "#56949f",
-    "red": "#b4637a",
-    "yellow": "#ea9d34",
-    "orange": "#d7827e",
-    "orange2": "#b4637a",
-    "bgYellow": "#f2e9e1"
+    "bg": "#191724",
+    "fg": "#e0def4",
+    "surface": "#1f1d2e",
+    "surface2": "#26233a",
+    "surface3": "#21202e",
+    "selection": "#403d52",
+    "borderGray": "#6e6a86",
+    "mutedGray": "#908caa",
+    "dimGray": "#6e6a86",
+    "faintGray": "#908caa",
+    "blue": "#31748f",
+    "blue2": "#9ccfd8",
+    "cyan": "#9ccfd8",
+    "purple": "#c4a7e7",
+    "green": "#9ccfd8",
+    "red": "#eb6f92",
+    "yellow": "#f6c177",
+    "orange": "#ebbcba",
+    "orange2": "#eb6f92",
+    "bgYellow": "#2a273f"
   },
   "colors": {
     "accent": "blue",
@@ -42,8 +42,8 @@
     "customMessageText": "fg",
     "customMessageLabel": "purple",
     "toolPendingBg": "surface3",
-    "toolSuccessBg": "#e6eee9",
-    "toolErrorBg": "#f5e4e7",
+    "toolSuccessBg": "#1f2d38",
+    "toolErrorBg": "#3a2130",
     "toolTitle": "blue",
     "toolOutput": "fg",
     "mdHeading": "orange",
@@ -77,8 +77,8 @@
     "bashMode": "orange"
   },
   "export": {
-    "pageBg": "#faf4ed",
-    "cardBg": "#fffaf3",
-    "infoBg": "#f4ede8"
+    "pageBg": "#191724",
+    "cardBg": "#1f1d2e",
+    "infoBg": "#21202e"
   }
 }

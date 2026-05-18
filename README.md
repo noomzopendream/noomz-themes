@@ -9,9 +9,9 @@ Currently included for Claude Code, pi.dev, and Hermes Agent:
 - `kanagawa` (Kanagawa Lotus-inspired light adaptation)
 - `tokyo-night-day` (TokyoNight Day-inspired adaptation)
 - `everforest-light` (Everforest Light Medium-inspired adaptation)
-- `rose-pine` (Rosé Pine main dark palette)
-- `rose-pine-moon` (Rosé Pine Moon dark palette)
-- `rose-pine-dawn` (Rosé Pine Dawn light palette)
+- `noomz-rose-pine` (Rosé Pine main dark palette)
+- `noomz-rose-pine-moon` (Rosé Pine Moon dark palette)
+- `noomz-rose-pine-dawn` (Rosé Pine Dawn light palette)
 
 The palettes keep readability high while darkening low-contrast text where needed, especially collapsed-output hints, file/link paths, dim metadata, neutral borders, and selection surfaces.
 
@@ -48,9 +48,9 @@ Then select one inside Claude Code:
 /theme kanagawa
 /theme tokyo-night-day
 /theme everforest-light
-/theme rose-pine
-/theme rose-pine-moon
-/theme rose-pine-dawn
+/theme noomz-rose-pine
+/theme noomz-rose-pine-moon
+/theme noomz-rose-pine-dawn
 ```
 
 ### pi.dev
@@ -62,7 +62,7 @@ mkdir -p ~/.pi/agent/themes
 cp themes/pi.dev/*.json ~/.pi/agent/themes/
 ```
 
-Then set `theme` to one theme slug in `~/.pi/agent/settings.json`, for example `modus-operandi`, `kanagawa`, `tokyo-night-day`, `everforest-light`, `rose-pine`, `rose-pine-moon`, or `rose-pine-dawn`.
+Then set `theme` to one theme slug in `~/.pi/agent/settings.json`, for example `modus-operandi`, `kanagawa`, `tokyo-night-day`, `everforest-light`, `noomz-rose-pine`, `noomz-rose-pine-moon`, or `noomz-rose-pine-dawn`.
 
 ### Hermes Agent
 
@@ -79,9 +79,9 @@ Then select one inside Hermes:
 /skin kanagawa
 /skin tokyo-night-day
 /skin everforest-light
-/skin rose-pine
-/skin rose-pine-moon
-/skin rose-pine-dawn
+/skin noomz-rose-pine
+/skin noomz-rose-pine-moon
+/skin noomz-rose-pine-dawn
 ```
 
 To make it the default, set:
@@ -163,9 +163,9 @@ Recommended terminal profile background colors:
 | `kanagawa` | `#f2ecbc` |
 | `tokyo-night-day` | `#e1e2e7` |
 | `everforest-light` | `#fdf6e3` |
-| `rose-pine` | `#191724` |
-| `rose-pine-moon` | `#232136` |
-| `rose-pine-dawn` | `#faf4ed` |
+| `noomz-rose-pine` | `#191724` |
+| `noomz-rose-pine-moon` | `#232136` |
+| `noomz-rose-pine-dawn` | `#faf4ed` |
 
 If using cmux or another terminal wrapper, identify the host terminal profile before changing colors; do not kill production cmux processes just to force a reload.
 
