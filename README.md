@@ -12,6 +12,7 @@ Currently included for Claude Code, pi.dev, and Hermes Agent:
 - `noomz-rose-pine` (Rosé Pine main dark palette)
 - `noomz-rose-pine-moon` (Rosé Pine Moon dark palette)
 - `noomz-rose-pine-dawn` (Rosé Pine Dawn light palette)
+- `noomz-rose-pine-dawn-contrast` (higher-contrast Rosé Pine Dawn adaptation)
 
 The palettes keep readability high while darkening low-contrast text where needed, especially collapsed-output hints, file/link paths, dim metadata, neutral borders, and selection surfaces.
 
@@ -51,6 +52,7 @@ Then select one inside Claude Code:
 /theme noomz-rose-pine
 /theme noomz-rose-pine-moon
 /theme noomz-rose-pine-dawn
+/theme noomz-rose-pine-dawn-contrast
 ```
 
 ### pi.dev
@@ -62,7 +64,7 @@ mkdir -p ~/.pi/agent/themes
 cp themes/pi.dev/*.json ~/.pi/agent/themes/
 ```
 
-Then set `theme` to one theme slug in `~/.pi/agent/settings.json`, for example `modus-operandi`, `kanagawa`, `tokyo-night-day`, `everforest-light`, `noomz-rose-pine`, `noomz-rose-pine-moon`, or `noomz-rose-pine-dawn`.
+Then set `theme` to one theme slug in `~/.pi/agent/settings.json`, for example `modus-operandi`, `kanagawa`, `tokyo-night-day`, `everforest-light`, `noomz-rose-pine`, `noomz-rose-pine-moon`, `noomz-rose-pine-dawn`, or `noomz-rose-pine-dawn-contrast`.
 
 ### Hermes Agent
 
@@ -82,6 +84,7 @@ Then select one inside Hermes:
 /skin noomz-rose-pine
 /skin noomz-rose-pine-moon
 /skin noomz-rose-pine-dawn
+/skin noomz-rose-pine-dawn-contrast
 ```
 
 To make it the default, set:
@@ -166,6 +169,7 @@ Recommended terminal profile background colors:
 | `noomz-rose-pine` | `#191724` |
 | `noomz-rose-pine-moon` | `#232136` |
 | `noomz-rose-pine-dawn` | `#faf4ed` |
+| `noomz-rose-pine-dawn-contrast` | `#faf4ed` |
 
 If using cmux or another terminal wrapper, identify the host terminal profile before changing colors; do not kill production cmux processes just to force a reload.
 

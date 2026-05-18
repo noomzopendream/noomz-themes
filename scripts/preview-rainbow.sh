@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # preview-rainbow.sh — print rainbow palette swatches for claude themes
 # usage: ./preview-rainbow.sh [theme-name]
-#   theme-name: operandi | tinted | everforest | kanagawa | tokyo (default: all)
+#   theme-name: operandi | tinted | everforest | kanagawa | tokyo | rose | moon | dawn | dawn-contrast (default: all)
 
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -84,6 +84,10 @@ THEME_SPECS=(
   "everforest|everforest-light.json|EVERFOREST LIGHT"
   "kanagawa|kanagawa.json|KANAGAWA"
   "tokyo|tokyo-night-day.json|TOKYO NIGHT DAY"
+  "rose|noomz-rose-pine.json|NOOMZ ROSÉ PINE"
+  "moon|noomz-rose-pine-moon.json|NOOMZ ROSÉ PINE MOON"
+  "dawn|noomz-rose-pine-dawn.json|NOOMZ ROSÉ PINE DAWN"
+  "dawn-contrast|noomz-rose-pine-dawn-contrast.json|NOOMZ ROSÉ PINE DAWN CONTRAST"
 )
 
 show_all() {
